@@ -1,4 +1,9 @@
+"""shared elements script.
 
+This script works in order to get the information about phenotypical and biological features for each orphan and rare disease
+It also evaluates the shared elements of each orphan disease against all the present diseases in DISNET through Tanimoto/Jaccard index.
+
+"""
 import mysql.connector
 from mysql.connector import errorcode
 
@@ -57,7 +62,7 @@ ON ( dp2.protein_id = ppi.protein2_id AND dp1.disease_id = dp2.disease_id) """)
 
 ppi=cursor.fetchall()
 
-# convert the list of thuples to dictionaries
+# convert the list of tuples to dictionaries
 def ConvertPPI(tup, dic):
     """This Function convert the list of tuples to dictionaries
 

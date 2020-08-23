@@ -53,7 +53,7 @@ request_url(url_chemical_diseases,file_name_chemical_diseases)
 request_url(url_chemical,file_name_chemical)
 
 
-# Get the DrugBank codes of each drug from the has_code table, keep them in a diccionary. 
+# Get the DrugBank codes of each drug from the has_code table, keep them in a dictionary. 
 # The  DrugBank id as a key and the chEMBL id as a value 
 drugbank_chembl={}
 cross_references_list=get_list("SELECT * FROM has_code where entity_id = 2 and resource_id = 95 ")

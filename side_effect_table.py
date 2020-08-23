@@ -62,16 +62,16 @@ def download_file(url,file_name):
 download_file(url_drug_atc,file_name_drug_atc)
 download_file(url_side_effects,file_name_side_effects)
 
-# Create a diccionary in order to keep the information, ATC codes as a key, and the STITCH as values.
+# Create a dictionary in order to keep the information, ATC codes as a key, and the STITCH as values.
 def atc_stitch_codes(file_atc):
-    """ This function takes the drug_atc file in order to create a diccionary
+    """ This function takes the drug_atc file in order to create a dictionary
      in order to keep the information, ATC codes as a key, and the STITCH as values.
      
     Args:
         file_atc (str): The name of the file where the information about atc codes is.
 
     Returns:
-        atc_stitch (dic): A diccionary with the cross-reference between atc and stitch
+        atc_stitch (dic): A dictionary with the cross-reference between atc and stitch
 
      """
     atc_stitch={}
@@ -89,7 +89,7 @@ atc_stitch_dic=atc_stitch_codes(file_name_drug_atc)
 # Get the ATC codes with its correspond chEMBL id from DISNET database
 ATC_code_table=get_list("select drug_id, ATC_code_id from ATC_code")
 
-# iterate through the ATC_code_table in order to get a diccionary with STITCH id as keys and chEMBL id as values.
+# iterate through the ATC_code_table in order to get a dictionary with STITCH id as keys and chEMBL id as values.
 chembl_stitch_dic={}
 for i in ATC_code_table:
     drug_id=i[0]

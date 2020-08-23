@@ -19,7 +19,7 @@ from get_list import get_list
 cursor = conection_DISNET_drugslayer.cursor
 
 
-# Get the de MeSH code and the UMLS code from the Previous Version of has_code table, and create a diccionary with MeSH as key and Code as  value
+# Get the de MeSH code and the UMLS code from the Previous Version of has_code table, and create a dictionary with MeSH as key and Code as  value
 PV_has_code_table=get_list("select id,code from has_code where resource_id = 121")
 mesh_umls_dic = {}
 
