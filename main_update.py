@@ -1,3 +1,5 @@
+## Author: Sara Jaramillo Cárdenas
+## Version: 1.0
 """Updates.
 
 Update all the tables.

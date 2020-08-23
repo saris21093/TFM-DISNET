@@ -1,3 +1,5 @@
+## Author: Sara Jaramillo Cárdenas
+## Version: 1.0
 """First time use.
 
 Create tables, insert some important data in the source, entity and code_reference tables
