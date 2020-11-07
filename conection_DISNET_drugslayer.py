@@ -4,12 +4,12 @@ This module needs the information of the database that the data will be stored.
 """
 import mysql.connector
 from mysql.connector import errorcode
-DB_NAME = 'disnet_drugslayer'
+DB_NAME = ''
 
-cnx = mysql.connector.connect(host='138.4.130.153',
-                            port= '30604'   ,
-                            user='drugslayer',
-                            password='drugs1234',
+cnx = mysql.connector.connect(host='',
+                            port= ''   ,
+                            user='',
+                            password='',
                             database = DB_NAME)
 cursor = cnx.cursor()
 cnx.autocommit = True
